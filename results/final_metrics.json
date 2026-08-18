@@ -1,0 +1,72 @@
+{
+  "run_mode": "full",
+  "data_sha256": "5de40f6319f30de0e577716b1253488dad117000659e7c3944e425c2bbdac641",
+  "seed": 23236,
+  "optuna": {
+    "total_trials": 183,
+    "state_counts": {
+      "COMPLETE": 120,
+      "PRUNED": 63
+    }
+  },
+  "selected_candidate": {
+    "name": "T109",
+    "preprocess": {
+      "numeric_only": false,
+      "scaler": "standard",
+      "encoding": "onehot",
+      "feature_engineering": true,
+      "add_log_features": false,
+      "winsorize": false,
+      "min_frequency": null,
+      "target_transform": "log1p"
+    },
+    "model": {
+      "hidden_layers": [
+        512,
+        128,
+        128
+      ],
+      "activation": "tanh",
+      "dropout": 0.07693697465502221,
+      "batch_norm": false,
+      "optimizer": "adamw",
+      "learning_rate": 0.010497107988343921,
+      "weight_decay": 1.8065532921157753e-07,
+      "momentum": 0.6410128642491457,
+      "batch_size": 64,
+      "max_epochs": 200,
+      "patience": 22,
+      "min_delta": 1e-05,
+      "loss": "mse",
+      "scheduler": "plateau",
+      "gradient_clip": 5.0
+    }
+  },
+  "final_epochs": 12,
+  "parameter_count": 245121,
+  "input_dim": 317,
+  "internal_test": {
+    "rows": 234,
+    "single": {
+      "rmse": 24460.459392744375,
+      "mae": 16131.427627123478,
+      "r2": 0.8865815897651146
+    },
+    "ensemble": {
+      "rmse": 22385.65896908643,
+      "mae": 14181.623043491358,
+      "r2": 0.9050064531501623
+    }
+  },
+  "cv": {
+    "mean_rmse": 26680.51992356596,
+    "std_rmse": 7843.992197310759,
+    "mean_mae": 15883.379491064421,
+    "mean_r2": 0.8774321358054111,
+    "median_best_epoch": 12
+  },
+  "elapsed_minutes_before_report": 0.9171833333336205,
+  "elapsed_minutes_total": 0.9572833333339077,
+  "within_budget": true
+}

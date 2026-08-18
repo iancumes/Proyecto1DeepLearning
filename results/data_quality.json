@@ -1,0 +1,145 @@
+{
+  "raw": {
+    "rows": 1168,
+    "columns": 81,
+    "numeric_features": 37,
+    "categorical_features": 43,
+    "duplicate_rows": 0,
+    "duplicate_ids": 0,
+    "total_missing": 6227,
+    "columns_with_missing": 19,
+    "remaining_wrapped_apostrophes": 380,
+    "target_mean": 181441.5419520548,
+    "target_median": 165000.0,
+    "target_std": 77263.58386222839,
+    "target_min": 34900.0,
+    "target_max": 745000.0,
+    "target_skew": 1.743128561420854,
+    "log_target_skew": 0.12489024367919244,
+    "extreme_living_area": [
+      {
+        "Id": 1183,
+        "GrLivArea": 4476,
+        "SalePrice": 745000
+      },
+      {
+        "Id": 524,
+        "GrLivArea": 4676,
+        "SalePrice": 184750
+      },
+      {
+        "Id": 1299,
+        "GrLivArea": 5642,
+        "SalePrice": 160000
+      }
+    ],
+    "consistency_checks": {
+      "garage_absence_mismatches": 0,
+      "basement_absence_mismatches": 0,
+      "fireplace_absence_mismatches": 0,
+      "pool_absence_mismatches": 0
+    },
+    "top_iqr_outliers": {
+      "EnclosedPorch": 160,
+      "BsmtFinSF2": 131,
+      "OverallCond": 99,
+      "ScreenPorch": 97,
+      "MSSubClass": 84,
+      "MasVnrArea": 77,
+      "LotFrontage": 68,
+      "BsmtHalfBath": 66,
+      "OpenPorchSF": 60,
+      "KitchenAbvGr": 56,
+      "LotArea": 54,
+      "SalePrice": 48,
+      "TotalBsmtSF": 47,
+      "MiscVal": 44,
+      "WoodDeckSF": 30
+    },
+    "missing_rates": {
+      "PoolQC": 0.9948630136986302,
+      "MiscFeature": 0.9606164383561644,
+      "Alley": 0.9366438356164384,
+      "Fence": 0.800513698630137,
+      "MasVnrType": 0.5847602739726028,
+      "FireplaceQu": 0.4683219178082192,
+      "LotFrontage": 0.1857876712328767,
+      "GarageQual": 0.0547945205479452,
+      "GarageFinish": 0.0547945205479452,
+      "GarageType": 0.0547945205479452,
+      "GarageYrBlt": 0.0547945205479452,
+      "GarageCond": 0.0547945205479452,
+      "BsmtCond": 0.023972602739726026,
+      "BsmtQual": 0.023972602739726026,
+      "BsmtExposure": 0.023972602739726026,
+      "BsmtFinType1": 0.023972602739726026,
+      "BsmtFinType2": 0.023972602739726026,
+      "MasVnrArea": 0.005136986301369863,
+      "Electrical": 0.0008561643835616438
+    }
+  },
+  "clean": {
+    "rows": 1168,
+    "columns": 81,
+    "numeric_features": 37,
+    "categorical_features": 43,
+    "duplicate_rows": 0,
+    "duplicate_ids": 0,
+    "total_missing": 288,
+    "columns_with_missing": 4,
+    "remaining_wrapped_apostrophes": 0,
+    "target_mean": 181441.5419520548,
+    "target_median": 165000.0,
+    "target_std": 77263.58386222839,
+    "target_min": 34900.0,
+    "target_max": 745000.0,
+    "target_skew": 1.743128561420854,
+    "log_target_skew": 0.12489024367919244,
+    "extreme_living_area": [
+      {
+        "Id": 1183,
+        "GrLivArea": 4476,
+        "SalePrice": 745000
+      },
+      {
+        "Id": 524,
+        "GrLivArea": 4676,
+        "SalePrice": 184750
+      },
+      {
+        "Id": 1299,
+        "GrLivArea": 5642,
+        "SalePrice": 160000
+      }
+    ],
+    "consistency_checks": {
+      "garage_absence_mismatches": 0,
+      "basement_absence_mismatches": 0,
+      "fireplace_absence_mismatches": 0,
+      "pool_absence_mismatches": 0
+    },
+    "top_iqr_outliers": {
+      "EnclosedPorch": 160,
+      "BsmtFinSF2": 131,
+      "OverallCond": 99,
+      "ScreenPorch": 97,
+      "MSSubClass": 84,
+      "MasVnrArea": 77,
+      "LotFrontage": 68,
+      "BsmtHalfBath": 66,
+      "OpenPorchSF": 60,
+      "KitchenAbvGr": 56,
+      "LotArea": 54,
+      "SalePrice": 48,
+      "TotalBsmtSF": 47,
+      "MiscVal": 44,
+      "WoodDeckSF": 30
+    },
+    "missing_rates": {
+      "LotFrontage": 0.1857876712328767,
+      "GarageYrBlt": 0.0547945205479452,
+      "MasVnrArea": 0.005136986301369863,
+      "Electrical": 0.0008561643835616438
+    }
+  }
+}
