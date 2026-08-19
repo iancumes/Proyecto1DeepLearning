@@ -1,0 +1,130 @@
+{
+  "coarse_results": [
+    {
+      "name": "cb_log_d5",
+      "folds": 3,
+      "mean_rmse": 27386.6400090617,
+      "std_rmse": 580.7797775248189,
+      "fold_rmse": [
+        26762.562601806614,
+        27236.235994844115,
+        28161.12143053438
+      ],
+      "median_iterations": 604,
+      "config": {
+        "name": "cb_log_d5",
+        "log_target": true,
+        "depth": 5,
+        "learning_rate": 0.04,
+        "l2_leaf_reg": 5.0,
+        "random_strength": 0.4,
+        "bagging_temperature": 0.5
+      }
+    },
+    {
+      "name": "cb_log_d6",
+      "folds": 3,
+      "mean_rmse": 28145.643793882835,
+      "std_rmse": 1074.6249267131889,
+      "fold_rmse": [
+        27615.717249428093,
+        27177.07089202301,
+        29644.143240197405
+      ],
+      "median_iterations": 800,
+      "config": {
+        "name": "cb_log_d6",
+        "log_target": true,
+        "depth": 6,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 7.0,
+        "random_strength": 0.5,
+        "bagging_temperature": 0.5
+      }
+    },
+    {
+      "name": "cb_raw_d6",
+      "folds": 3,
+      "mean_rmse": 26981.4460771351,
+      "std_rmse": 502.05762926253357,
+      "fold_rmse": [
+        26631.91184530159,
+        26620.99159386747,
+        27691.434792236243
+      ],
+      "median_iterations": 799,
+      "config": {
+        "name": "cb_raw_d6",
+        "log_target": false,
+        "depth": 6,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 7.0,
+        "random_strength": 0.5,
+        "bagging_temperature": 0.5
+      }
+    }
+  ],
+  "final_results": [
+    {
+      "name": "cb_raw_d6",
+      "folds": 5,
+      "mean_rmse": 25484.902578301753,
+      "std_rmse": 2687.0569438794655,
+      "fold_rmse": [
+        24808.24864856211,
+        23315.670337199554,
+        30042.84783691955,
+        22543.50641182552,
+        26714.23965700204
+      ],
+      "median_iterations": 800,
+      "config": {
+        "name": "cb_raw_d6",
+        "log_target": false,
+        "depth": 6,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 7.0,
+        "random_strength": 0.5,
+        "bagging_temperature": 0.5
+      }
+    }
+  ],
+  "winner": {
+    "name": "cb_raw_d6",
+    "folds": 5,
+    "mean_rmse": 25484.902578301753,
+    "std_rmse": 2687.0569438794655,
+    "fold_rmse": [
+      24808.24864856211,
+      23315.670337199554,
+      30042.84783691955,
+      22543.50641182552,
+      26714.23965700204
+    ],
+    "median_iterations": 800,
+    "config": {
+      "name": "cb_raw_d6",
+      "log_target": false,
+      "depth": 6,
+      "learning_rate": 0.03,
+      "l2_leaf_reg": 7.0,
+      "random_strength": 0.5,
+      "bagging_temperature": 0.5
+    }
+  },
+  "oof_calibrated_rmse": 25435.92994748115,
+  "internal_catboost_rmse": 24049.352896089236,
+  "internal_mlp_ensemble_rmse": 22385.65896908643,
+  "internal_blend_rmse": 22091.949450058168,
+  "catboost_weight": 0.30000000000000004,
+  "mlp_weight": 0.7,
+  "seeds": [
+    23236,
+    23237,
+    23238,
+    23239,
+    23240
+  ],
+  "test_rows": 292,
+  "output": "C:\\Users\\ianro\\OneDrive\\Documentos\\Uvg\\Octavo Semestre\\Deep Learning\\Proyecto1DeepLearning\\predictions_best_blend.csv"
+}

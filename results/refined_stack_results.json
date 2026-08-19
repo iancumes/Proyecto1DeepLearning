@@ -1,0 +1,90 @@
+{
+  "scores": [
+    {
+      "name": "calibracion_lineal",
+      "cv_rmse": 24219.65513713752
+    },
+    {
+      "name": "ridge_core_a10",
+      "cv_rmse": 25048.453478920528
+    },
+    {
+      "name": "huber_core_e1.8",
+      "cv_rmse": 25102.76954297892
+    },
+    {
+      "name": "huber_core_e1.2",
+      "cv_rmse": 25127.941982679968
+    },
+    {
+      "name": "huber_core_e1.5",
+      "cv_rmse": 25128.012472607206
+    },
+    {
+      "name": "convex_core_stable",
+      "cv_rmse": 25234.356692039655,
+      "weights": {
+        "lgb_2": 0.5292915942833015,
+        "lgb_1": 0.13035620758463493,
+        "xgb_2": 5.681867515284577e-17,
+        "catboost": 0.09262621942466125,
+        "mlp": 0.2477259787074022
+      }
+    },
+    {
+      "name": "nnls_core",
+      "cv_rmse": 25246.46573832208
+    },
+    {
+      "name": "ridge_core_a100",
+      "cv_rmse": 25272.414742749897
+    },
+    {
+      "name": "nnls_all",
+      "cv_rmse": 25483.66657351653
+    },
+    {
+      "name": "rf_meta_core",
+      "cv_rmse": 25696.587489625024
+    },
+    {
+      "name": "gbr_core_d2_squared_error",
+      "cv_rmse": 26245.423143293672
+    },
+    {
+      "name": "gbr_core_d2_huber",
+      "cv_rmse": 26359.035608829992
+    },
+    {
+      "name": "ridge_features_a100",
+      "cv_rmse": 26485.90516865602
+    },
+    {
+      "name": "gbr_core_d1_squared_error",
+      "cv_rmse": 27948.673804315928
+    },
+    {
+      "name": "ridge_core_a1000",
+      "cv_rmse": 28082.726920013793
+    },
+    {
+      "name": "ridge_features_a1000",
+      "cv_rmse": 29132.936901812245
+    },
+    {
+      "name": "gbr_core_d1_huber",
+      "cv_rmse": 30882.534356497712
+    },
+    {
+      "name": "ridge_features_a10000",
+      "cv_rmse": 46009.40363945877
+    },
+    {
+      "name": "ridge_core_a10000",
+      "cv_rmse": 54980.140403161924
+    }
+  ],
+  "selected": "calibracion_lineal",
+  "selected_cv_rmse": 24219.65513713752,
+  "output": "C:\\Users\\ianro\\OneDrive\\Documentos\\Uvg\\Octavo Semestre\\Deep Learning\\Proyecto1DeepLearning\\predictions_best_competition.csv"
+}

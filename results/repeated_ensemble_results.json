@@ -1,0 +1,129 @@
+{
+  "fold_seeds": [
+    23936,
+    24936,
+    25936,
+    26936
+  ],
+  "scores": [
+    {
+      "name": "repeated_lgb_16",
+      "rmse": 25373.146144856993,
+      "repeat_rmse": [
+        24911.774556202028,
+        26319.694379722583,
+        25291.607445784204,
+        29979.81828339133
+      ],
+      "params": {
+        "target_mode": "log",
+        "n_estimators": 1520,
+        "learning_rate": 0.051211924279639345,
+        "num_leaves": 10,
+        "max_depth": 4,
+        "min_child_samples": 9,
+        "subsample": 0.9463591984381001,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.7841567987123067,
+        "reg_alpha": 0.0003270076691544869,
+        "reg_lambda": 0.01698471742653175
+      }
+    },
+    {
+      "name": "repeated_lgb_23",
+      "rmse": 26109.546583463958,
+      "repeat_rmse": [
+        25329.486419052246,
+        26949.64008023646,
+        26031.36252889868,
+        31420.331144054722
+      ],
+      "params": {
+        "target_mode": "log",
+        "n_estimators": 935,
+        "learning_rate": 0.06897990336157526,
+        "num_leaves": 8,
+        "max_depth": 3,
+        "min_child_samples": 6,
+        "subsample": 0.9029056834594184,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.7635978039647148,
+        "reg_alpha": 2.235422443187661e-05,
+        "reg_lambda": 0.12626057427424406
+      }
+    },
+    {
+      "name": "repeated_xgb_1",
+      "rmse": 26204.089559480333,
+      "repeat_rmse": [
+        25974.925185181928,
+        26064.141323878677,
+        26081.960094025253,
+        29440.12611221845
+      ],
+      "params": {
+        "target_mode": "log",
+        "n_estimators": 1410,
+        "learning_rate": 0.01821757615874947,
+        "max_depth": 3,
+        "min_child_weight": 16.2333199711801,
+        "subsample": 0.7725544423343336,
+        "colsample_bytree": 0.9060155008318829,
+        "reg_alpha": 0.03124202014682049,
+        "reg_lambda": 0.18129181288948187,
+        "gamma": 0.00996749174951648
+      }
+    },
+    {
+      "name": "repeated_lgb_24",
+      "rmse": 26307.75866509647,
+      "repeat_rmse": [
+        25135.019287615498,
+        26688.840399983692,
+        26526.160851812627,
+        32006.17100019185
+      ],
+      "params": {
+        "target_mode": "log",
+        "n_estimators": 1796,
+        "learning_rate": 0.05206300140499709,
+        "num_leaves": 8,
+        "max_depth": 3,
+        "min_child_samples": 5,
+        "subsample": 0.9337030096934966,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.6621698357950644,
+        "reg_alpha": 0.0040777996547078435,
+        "reg_lambda": 0.005412506268636629
+      }
+    },
+    {
+      "name": "catboost",
+      "rmse": 26797.85948422611
+    },
+    {
+      "name": "repeated_mlp",
+      "rmse": 27324.127959061025,
+      "repeat_rmse": [
+        27323.831940813794,
+        28298.945211156795,
+        28270.883570412017,
+        30190.51979487463
+      ]
+    }
+  ],
+  "weights": {
+    "repeated_lgb_16": 0.6782789086638558,
+    "repeated_lgb_23": 2.168404344971009e-18,
+    "repeated_lgb_24": 1.3010426069826053e-18,
+    "repeated_xgb_1": 0.0,
+    "repeated_mlp": 0.14184516154111967,
+    "catboost": 0.1798759297950246
+  },
+  "blend_oof_rmse": 25136.961796269217,
+  "calibration": {
+    "used": false,
+    "cv_rmse": 25157.508136310862
+  },
+  "output": "C:\\Users\\ianro\\OneDrive\\Documentos\\Uvg\\Octavo Semestre\\Deep Learning\\Proyecto1DeepLearning\\predictions_repeated_super_ensemble.csv"
+}

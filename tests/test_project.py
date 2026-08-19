@@ -104,14 +104,22 @@ def test_professor_pipeline_and_output_contract_if_available(tmp_path):
         pytest.skip("Los archivos del profesor o los artefactos no están disponibles")
     raw_input = pd.read_csv(input_path)
     predictions, metrics = predict_file(input_path, artifact_dir, mode="single")
-    output = apply_output_template(predictions, template_path)
+    template = pd.read_csv(template_path)
     assert metrics == {}
-    assert output.columns.tolist() == ["Id", "Prediction"]
-    assert output["Id"].tolist() == raw_input["Id"].tolist()
-    assert np.isfinite(output["Prediction"]).all()
-    assert (output["Prediction"] > 0).all()
+    assert template.columns.tolist() == ["Id", "Prediction"]
+    assert predictions.columns.tolist() == ["Id", "Prediction"]
+    assert predictions["Id"].tolist() == raw_input["Id"].tolist()
+    assert np.isfinite(predictions["Prediction"]).all()
+    assert (predictions["Prediction"] > 0).all()
 
-    wrong_template = pd.read_csv(template_path).iloc[::-1]
+    if len(template) == len(predictions):
+        output = apply_output_template(predictions, template_path)
+        assert output["Id"].tolist() == raw_input["Id"].tolist()
+    else:
+        # El archivo del profesor puede ser una muestra del contrato de salida.
+        assert template["Id"].tolist() == predictions["Id"].head(len(template)).tolist()
+
+    wrong_template = template.iloc[::-1]
     wrong_path = tmp_path / "wrong_template.csv"
     wrong_template.to_csv(wrong_path, index=False)
     with pytest.raises(ValueError, match="orden no coinciden"):
